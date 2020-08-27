@@ -1,5 +1,6 @@
-import React, { Fragment } from "react";
-import {primerMayuscula} from "../helper"
+import React from "react";
+import { primerMayuscula } from "../helper";
+import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 
 const ContenedorResumen = styled.div`
@@ -25,6 +26,10 @@ const Resumen = ({ datos }) => {
       </ul>
     </ContenedorResumen>
   );
+};
+
+Resumen.propTypes = {
+  datos: PropTypes.object.isRequired,
 };
 
 export default Resumen;
